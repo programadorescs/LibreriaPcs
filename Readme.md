@@ -42,7 +42,7 @@
   }
 ```
 
-- Segundo: En el archivo
+- Segundo: En el archivo libs.versions.toml agregar la version y el nombre de la libreria.
 ```kotlin
 [versions]
     ...
