@@ -1,5 +1,7 @@
 # Libreria de utilidades
 
+La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo de app, para usarlo debe contar con el sdk de android 7 o superior.
+
 ## Requisitos
 
 - Android Studio Iguana | 2023.2.1 o superior.
