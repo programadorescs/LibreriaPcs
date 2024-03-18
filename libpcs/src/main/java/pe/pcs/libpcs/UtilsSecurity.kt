@@ -7,7 +7,7 @@ import javax.crypto.spec.SecretKeySpec
 
 object UtilsSecurity {
 
-    // respetar la longitud de la clave a 16 digitos
+    // Respetar la longitud de la clave a 16 digitos
     private val valor_clave = "Z&K8xD#T@WC=KLQI".toByteArray()
 
     fun encryptData(datoSinEncriptar: String): String {
