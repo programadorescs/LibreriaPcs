@@ -39,6 +39,8 @@ publishing {
             afterEvaluate {
                 from(components["release"])
             }
+
+            version = "1.0.4"
         }
     }
 }

@@ -34,6 +34,16 @@ class NumberToLetter {
         "novecientos "
     )
 
+    /**
+     *
+     * Función para convertir un valor numérico en su representación literal en palabras, incluyendo la parte decimal.
+     *
+     * @param valor El valor numérico a convertir, en formato de cadena.
+     * @param nombreMoneda El nombre de la moneda a incluir en la representación literal.
+     * @param mayusculas Indica si la representación literal debe estar en mayúsculas (true) o minúsculas (false).
+     * @return La representación literal del valor numérico en palabras, incluyendo la parte decimal y el nombre de la moneda, o null si no se puede convertir.
+     * @author Jack Chavez Saravia
+     */
     fun Convertir(valor: String, nombreMoneda: String, mayusculas: Boolean): String {
         var numero = valor
         var literal = ""
