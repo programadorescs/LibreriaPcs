@@ -4,10 +4,10 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 
 ## Requisitos
 
-- Android Studio Iguana | 2023.2.1 o superior.
-- Android Gradle Plugin Version 8.3.0
-- Gradle Version 8.4
-- Kotlin 1.9.0 o superior.
+- Android Studio Jellyfish | 2023.3.1 Patch 1 o superior.
+- Android Gradle Plugin Version 8.4.1
+- Gradle Version 8.6
+- Kotlin 1.9.22 o superior.
 
 ## Funcionalidades
 
@@ -29,6 +29,7 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 - Mostrar una alerta.
 - Mostrar un toast.
 - Crear un hash sha512.
+- Mostrar publicidad interstitial de Google AdMob
 - Etc.
 
 ## Como usarlo
@@ -47,14 +48,14 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 - Segundo: En el archivo libs.versions.toml agregar la version y el nombre de la libreria.
 ```kotlin
 [versions]
-    ...
-    ...
-    libpcsVersion = "1.0.3"
+    ---
+    ---
+    libpcsVersion = "1.0.7"
 
 [libraries]
-    ...
-    ...
-    libpcs = { group = "com.github.programadorescs", name = "LibreriaPcs", version.ref = "libpcsVersion" }
+    ---
+    ---
+    libpcs = { module = "com.github.programadorescs:LibreriaPcs", version.ref = "libpcsVersion" }
 ```
 
 - Tercero: Abrir el archivo build.gradle.kts a nivel de modulo
