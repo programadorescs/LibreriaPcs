@@ -42,7 +42,7 @@ publishing {
                 //artifact(tasks.getByName("javadocJar"))
             }
 
-            version = "1.0.5"
+            version = "1.0.8"
         }
     }
 }
@@ -52,10 +52,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    //implementation(project(":libpcs"))
-    // AdMob
-    implementation(libs.play.services.ads)
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

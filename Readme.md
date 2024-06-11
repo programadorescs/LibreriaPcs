@@ -4,8 +4,8 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 
 ## Requisitos
 
-- Android Studio Jellyfish | 2023.3.1 Patch 1 o superior.
-- Android Gradle Plugin Version 8.4.1
+- Android Studio Jellyfish | 2023.3.1 Patch 2 o superior.
+- Android Gradle Plugin Version 8.4.2
 - Gradle Version 8.6
 - Kotlin 1.9.22 o superior.
 
@@ -29,7 +29,6 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 - Mostrar una alerta.
 - Mostrar un toast.
 - Crear un hash sha512.
-- Mostrar publicidad interstitial de Google AdMob
 - Etc.
 
 ## Como usarlo
@@ -50,7 +49,7 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 [versions]
     ---
     ---
-    libpcsVersion = "1.0.7"
+    libpcsVersion = "1.0.8"
 
 [libraries]
     ---
