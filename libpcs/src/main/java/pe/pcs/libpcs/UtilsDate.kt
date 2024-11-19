@@ -101,4 +101,76 @@ object UtilsDate {
         return SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ROOT).format(System.currentTimeMillis())
     }
 
+    /**
+     * Convierte una cadena de texto que representa una fecha en un objeto Date.
+     * La fecha debe estar en el formato "yyyy-MM-dd HH:mm:ss".
+     *
+     * @param fecha Una cadena de texto que representa la fecha en el formato "yyyy-MM-dd HH:mm:ss".
+     * @return Un objeto Date correspondiente a la fecha proporcionada en la cadena.
+     * @throws ParseException Si la cadena de entrada no coincide con el formato esperado.
+     *
+     * ## Ejemplo:
+     * ```
+     * val fechaString = "2024-11-19 15:30:00"
+     * val fecha = convertStringToDate(fechaString)
+     * println(fecha)  // Imprime la fecha convertida como objeto Date
+     * ```
+     * @author Jack Chavez Saravia
+     */
+    fun convertStringToDate(fecha: String): Date {
+        return SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(fecha) ?: throw IllegalArgumentException("Fecha inválida")
+    }
+
+    /**
+     * Convierte un objeto Date en una cadena de texto representando la fecha en el formato "yyyy-MM-dd HH:mm:ss".
+     *
+     * @param fecha El objeto Date que se quiere convertir a una cadena de texto.
+     * @return Una cadena de texto que representa la fecha en el formato "yyyy-MM-dd HH:mm:ss".
+     *
+     * ## Ejemplo:
+     * ```
+     * val fecha = Date()
+     * val fechaString = convertDateToString(fecha)
+     * println(fechaString)  // Imprime la fecha actual como una cadena
+     * ```
+     * @author Jack Chavez Saravia
+     */
+    fun convertDateToString(fecha: Date): String {
+        return SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(fecha) ?: throw IllegalArgumentException("Fecha inválida")
+    }
+
+    /**
+     * Recibe un número entero que representa un mes (del 1 al 12) y devuelve el nombre abreviado del mes en español.
+     *
+     * @param mes Un número entero entre 1 y 12, representando un mes del año.
+     *             1 = Enero, 2 = Febrero, ..., 12 = Diciembre.
+     * @return Una cadena de texto con el nombre abreviado del mes en español.
+     *         Si el número de mes no está entre 1 y 12, retorna "Desconocido".
+     *
+     * ## Ejemplo:
+     * ```
+     * val mes = 3
+     * val nombreMes = getMonthName(mes)
+     * println(nombreMes)  // Imprime "Mar"
+     * ```
+     * @author Jack Chavez Saravia
+     */
+    fun getMonthName(mes: Int): String {
+        return when (mes) {
+            1 -> "Ene"
+            2 -> "Feb"
+            3 -> "Mar"
+            4 -> "Abr"
+            5 -> "May"
+            6 -> "Jun"
+            7 -> "Jul"
+            8 -> "Ago"
+            9 -> "Set"
+            10 -> "Oct"
+            11 -> "Nov"
+            12 -> "Dic"
+            else -> "Desconocido"
+        }
+    }
+
 }

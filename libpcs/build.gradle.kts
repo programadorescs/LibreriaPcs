@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "pe.pcs.libpcs"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -42,7 +42,7 @@ publishing {
                 //artifact(tasks.getByName("javadocJar"))
             }
 
-            version = "1.4.0"
+            version = "1.5.0"
         }
     }
 }

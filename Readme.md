@@ -4,8 +4,8 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 
 ## Requisitos
 
-- Android Studio Koala | 2024.1.1 o superior.
-- Android Gradle Plugin Version 8.5.2
+- Android Studio Koala Feature Drop | 2024.1.2 o superior.
+- Android Gradle Plugin Version 8.6.1
 - Gradle Version 8.7
 - Kotlin 1.9.22 o superior.
 
@@ -32,6 +32,7 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 - Permisos en tiempo de ejecución.
 - Utilidad de animación (crear transformación).
 - Verificar si el dispositivo tiene acceso a una red.
+- Valida si una cadena es una dirección IP en formato IPv4.
 - Función para agregar ceros a la cadena de entrada hasta completar la longitud especificada.
 - Etc.
 
@@ -53,7 +54,7 @@ La libreria agrupa funcionalidades que se usan frecuentemente en el desarrollo d
 [versions]
     ---
     ---
-    libpcsVersion = "1.4.0"
+    libpcsVersion = "1.5.0"
 
 [libraries]
     ---
